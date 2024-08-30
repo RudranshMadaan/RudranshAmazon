@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvbec</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header style= "color:rgb(211, 121, 11);
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    ">
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 450px 1fr;">
+    
+        
+        <nav>
+            <button class="cursor" style="
+    background-color: aqua;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+    "
+    onclick="location.href='index.html';">
+      Suvbec
+    </button>
+        </nav> 
+        <nav>
+            <ul>
+                <button style="margin-right: 7px;
+                border-radius: 8px;
+                border-width: 1px;
+                width:60px;
+                height: 25px;
+                border-color: rgb(36, 90, 90);
+                background-color: rgb(97, 206, 195);
+                cursor:pointer" 
+                onclick="location.href='index.html';">Home</button>
+                
+                <button style="margin-right: 7px;
+                border-radius: 8px;
+                border-width: 1px;
+                width:60px;
+                height: 25px;
+                border-color: rgb(36, 90, 90);
+                background-color: rgb(97, 206, 195);
+                cursor:pointer" 
+                onclick="location.href='about.html';">About</button>
+                <button style="margin-right: 7px;
+                border-radius: 8px;
+                border-width: 1px;
+                width:100px;
+                height: 25px;
+                border-color: rgb(36, 90, 90);
+                background-color: rgb(97, 206, 195);
+                cursor:pointer" onclick="location.href='survey.html';">Take Survey</button>
+                <button style="margin-right: 7px;
+                border-radius: 8px;
+                border-width: 1px;
+                width:70px;
+                height: 25px;
+                border-color: rgb(36, 90, 90);
+                background-color: rgb(97, 206, 195);
+                cursor:pointer" onclick="location.href='products.html';">Products</button>
+                <button style="margin-right: 7px;
+                border-radius: 8px;
+                border-width: 1px;
+                width:60px;
+                height: 25px;
+                border-color: rgb(36, 90, 90);
+                background-color: rgb(97, 206, 195);
+                cursor:pointer" onclick="location.href='contact.html';">Contact</button>
+            </ul>
+        </nav>
+    </div>
+    <div style="background-color: rgba(112, 88, 65, 0.934);">
+       
+    </div>
+        
+    </header>
+    <main>
+        <h1>Survey</h1>
+        <p>Complete the survey below to earn tokens:</p>
+        <form id="surveyForm">
+            <label for="product">Product:</label>
+            <select id="product" name="product" required>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+            </select>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="tokenMessage"></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Survey Earning App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
